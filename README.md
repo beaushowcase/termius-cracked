@@ -16,6 +16,13 @@ mv app.asar app.asar.bak  # Keep a backup, or directly
 rm app-update.yml  # Prevent automatic updates
 
 ```
+***** OR *****
+1. Unpack app.asar
+```shell
+cd C:\Users\beaub\AppData\Local\Programs\Termius Beta\resources
+npx @electron/asar extract app.asar .
+```
+*******************
 2. Modify app/js/background-process.js
 
 search `await this.api.bulkAccount`
