@@ -79,7 +79,7 @@ async updateUserProfile() {
             return await this.setUserProfile(e), e
 }
 ```
-3. Enter below command in windows powershell (Replace path of your Termius.ext)
+3. Enter below command in windows powershell (Replace path of your Termius.exe)
 ```
 Get-ChildItem -Path "C:\Users\beaud\AppData\Local\Programs\Termius\Termius.exe" -Recurse | ForEach-Object {
     Set-ItemProperty -Path $_.FullName -Name 'Zone.Identifier' -Value $null -ErrorAction SilentlyContinue
